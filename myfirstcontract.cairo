@@ -1,5 +1,5 @@
 #[contract]
-mod HelloStarknetDev {
+mod Hello_Starknet_Dev {
     use starknet::get_caller_address;
     use starknet::ContractAddress;
 
@@ -9,9 +9,9 @@ mod HelloStarknetDev {
 
 
     #[external]
-    fn Say_Hello_User(message: felt252) {
+    fn Say_Hello_Dev(message: felt252) {
         let caller = get_caller_address();
-        Hello_User (caller, message);
+        Hello Dev (caller, message);
     }
 
 }
